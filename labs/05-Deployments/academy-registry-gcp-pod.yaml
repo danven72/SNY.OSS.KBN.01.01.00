@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: academy-registry-deployment
+  labels:
+    app: academy-registry
+spec:
+  containers:
+  - name: prova-academy
+    image: gcr.io/intranet-gruppo-scai/academy-service-registry:0.0.1-SNAPSHOT
+  imagePullSecrets:
+  - name: scaigcpregistry

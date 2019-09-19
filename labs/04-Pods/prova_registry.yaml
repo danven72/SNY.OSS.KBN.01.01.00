@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: prova-academy
+  labels:
+    app: myapp
+spec:
+  containers:
+  - name: prova-academy
+    image: scaiconsulting/academy-service-registry:0.0.1-SNAPSHOT
